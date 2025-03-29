@@ -1,0 +1,59 @@
+/* Body defaults */
+body {
+    margin: 0;
+    font-family: sans-serif;
+
+  }
+
+/* Make index.html's background white */
+body.index-page {
+    background-color: white;
+  }
+  
+  /* For any page that doesn't have the .index-page class,
+     use a black background (like main.html, thanks.html, etc.): */
+body:not(.index-page) {
+    background-color: black;
+  }
+  
+  /* Center content vertically & horizontally */
+  .intro, .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 0 2em; /* optional padding for readability */
+  }
+  
+  /* Make H2 look like a clickable button (cursor pointer) */
+  .title-toggle {
+    cursor: pointer;
+    color: white; /* headings can remain white before clicking */
+    margin-bottom: 1em;
+  }
+  
+  /* Initially hidden paragraphs */
+  .hidden {
+    display: none;
+  }
+  
+  /* When revealed, display in yellow (lightbulb effect) */
+  .revealed {
+    display: block;
+    color: yellow;
+    margin-bottom: 2em;
+  }
+  
+  /* Styles for the navigation button to the 'thanks.html' page */
+  .button {
+    padding: 1em 2em;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    color: pink;
+    margin-top: 2em;
+  }
+  
+
+  

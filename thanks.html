@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conclusion</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="content">
+    <h2 class="title-toggle" >Conclusion</h2>
+    <p class="hidden" >Thank you for exploring!!</p>
+  </div>
+
+  <script>
+    // Select all H2 elements with the class "title-toggle"
+    const headings = document.querySelectorAll('.title-toggle');
+
+    headings.forEach(heading => {
+      heading.addEventListener('click', () => {
+        // The paragraph is the next sibling of the H2 in this layout
+        const paragraph = heading.nextElementSibling;
+        
+        // Toggle the .hidden and .revealed classes
+        paragraph.classList.toggle('hidden');
+        paragraph.classList.toggle('revealed');
+      });
+    });
+  </script>
+</body>
+</html>
